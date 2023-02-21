@@ -11,3 +11,11 @@ print(list)
 
 # built-in function len as for strings is also appied to lists
 print(len(list))
+
+# It is possible to make lists of lists(it calls nested lists)
+a = [1, 2, 3, 4]
+b = ['a', 'b', 'c', 'd']
+c = [a, b]
+print(c)
+print(c[1])     # out index list 1
+print(c[0][2])  # out indexed list 0 with idexed value 2
