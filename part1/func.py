@@ -5,7 +5,7 @@ def super_duper_function(x):
     if x < 10:
         return "The number is less than 10"
     else:
-        return "Now it's okay now"
+        return "The number is equal or bigger than 10"
 
 lolvalue = f("lol")
 print(lolvalue)
