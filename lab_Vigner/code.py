@@ -16,7 +16,7 @@ def encrypt():
 
     
     for x in range(iteration):
-        if (x > 0):     # на второй итерации result_text будет передавать прошлое значение и обнулятся
+        if (x > 0):   # на второй итерации result_text будет передавать прошлое значение и обнулятся
             text = result_text
             result_text = ""
         for i in range(len(text)):      # перебор алфавита открытого текста и определение смещения
