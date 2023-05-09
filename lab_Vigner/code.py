@@ -46,7 +46,7 @@ def decrypt():
     position = 0
     result_text = ""
 
-    while (len(key_text) < len(text)):  # создание последовательности слов ключа
+    while (len(key_text) < len(text)):  #  создание последовательности слов ключа
         key_text += key_text
 
     for x in range(iteration):
