@@ -62,6 +62,7 @@ def update_table_attribute():
                             conn.commit()
                             print("Строка обновлена")
                         except:
+                            conn.commit()
                             print("Строка не обновлена, проверьте действительно ли существует такой код ноутбука и/или модель в таблице 'products")
                     case 'speed':
                         try:
@@ -77,6 +78,7 @@ def update_table_attribute():
                             conn.commit()
                             print("Строка обновлена")
                         except:
+                            conn.commit()
                             print("Строка не обновлена, проверьте правильность введенных данных")
                     case 'ram':
                         try:
@@ -92,6 +94,7 @@ def update_table_attribute():
                             conn.commit()
                             print("Строка обновлена")
                         except:
+                            conn.commit()
                             print("Строка не обновлена, проверьте правильность введенных данных")
                     case 'hd':
                         try:
@@ -107,6 +110,7 @@ def update_table_attribute():
                             conn.commit()
                             print("Строка обновлена")
                         except:
+                            conn.commit()
                             print("Строка не обновлена, проверьте правильность введенных данных")
                     case 'price':
                         try:
@@ -122,6 +126,7 @@ def update_table_attribute():
                             conn.commit()
                             print("Строка обновлена")
                         except:
+                            conn.commit()
                             print("Строка не обновлена, проверьте правильность введенных данных")
                     case 'screen':
                         try:
@@ -137,6 +142,7 @@ def update_table_attribute():
                             conn.commit()
                             print("Строка обновлена")
                         except:
+                            conn.commit()
                             print("Строка не обновлена, проверьте правильность введенных данных")
                     case _:
                         print("Нужно ввести приведенную выше колонку! Сброс ввода")
@@ -157,6 +163,7 @@ def update_table_attribute():
                             conn.commit()
                             print("Строка обновлена")
                         except:
+                            conn.commit()
                             print("Строка не обновлена, проверьте действительно ли существует такой код ноутбука и/или модель в таблице 'products")
                     case 'speed':
                         try:
@@ -172,6 +179,7 @@ def update_table_attribute():
                             conn.commit()
                             print("Строка обновлена")
                         except:
+                            conn.commit()
                             print("Строка не обновлена, проверьте правильность введенных данных")
                     case 'ram':
                         try:
@@ -187,6 +195,7 @@ def update_table_attribute():
                             conn.commit()
                             print("Строка обновлена")
                         except:
+                            conn.commit()
                             print("Строка не обновлена, проверьте правильность введенных данных")
                     case 'hd':
                         try:
@@ -202,6 +211,7 @@ def update_table_attribute():
                             conn.commit()
                             print("Строка обновлена")
                         except:
+                            conn.commit()
                             print("Строка не обновлена, проверьте правильность введенных данных")
                     case 'cd':
                         try:
@@ -217,6 +227,7 @@ def update_table_attribute():
                             conn.commit()
                             print("Строка обновлена")
                         except:
+                            conn.commit()
                             print("Строка не обновлена, проверьте правильность введенных данных")
                     case 'price':
                         try:
@@ -232,6 +243,7 @@ def update_table_attribute():
                             conn.commit()
                             print("Строка обновлена")
                         except:
+                            conn.commit()
                             print("Строка не обновлена, проверьте правильность введенных данных")
                     case _:
                         print("Нужно ввести приведенную выше колонку! Сброс ввода")
@@ -251,6 +263,7 @@ def update_table_attribute():
                             conn.commit()
                             print("Строка обновлена")
                         except:
+                            conn.commit()
                             print("Строка не обновлена, проверьте действительно ли существует такой код принтера и/или модель в таблице 'products")
                     case 'color':
                         color = input("Введите цвет принтера(один символ): ")
@@ -262,6 +275,7 @@ def update_table_attribute():
                             conn.commit()
                             print("Строка обновлена")
                         except:
+                            conn.commit()
                             print("Строка не обновлена, проверьте правильность введенных данных")
                     case 'type':
                         type = input("Введите тип/категорию продукта: ")
@@ -273,6 +287,7 @@ def update_table_attribute():
                             conn.commit()
                             print("Строка обновлена")
                         except:
+                            conn.commit()
                             print("Строка не обновлена, проверьте правильность введенных данных")
                     case 'price':
                         try:
@@ -288,6 +303,7 @@ def update_table_attribute():
                             conn.commit()
                             print("Строка обновлена")
                         except:
+                            conn.commit()
                             print("Строка не обновлена, проверьте правильность введенных данных")
             case 'product':
                 #maker model type
@@ -306,6 +322,7 @@ def update_table_attribute():
                             conn.commit()
                             print("Строка обновлена")
                         except:
+                            conn.commit()
                             print("Строка не обновлена, проверьте действительно ли существует такая модель?")
                     case 'type':
                         type = input("Введите тип/категорию продукта: ")
@@ -317,6 +334,7 @@ def update_table_attribute():
                             conn.commit()
                             print("Строка обновлена")
                         except:
+                            conn.commit()
                             print("Строка не обновлена, проверьте правильность введенных данных")
                     case _:
                         print("Нужно ввести приведенную выше колонку! Сброс ввода")
@@ -341,7 +359,7 @@ def insert_into_table_func():
                 break
             case 'laptop':
                 try:
-                    code = int(input("Введите код ноутбука: "))
+                    code = int(input("Введите код ноутбука(убедитесь, чтобы не было такого же кода ноутбука): "))
                 except:
                     print("Код ноутбука только целое число, сброс ввода")
                     continue
@@ -407,15 +425,15 @@ def insert_into_table_func():
                 except:
                     print("Строка не добавлена, в таблице 'products' скорее всего отсутствует первичный ключ для атрибута 'model' \
                         Создайте сначала строку в таблице 'products', где укажите соответствующий первичный ключ 'model'")
-                
-                break
+                    conn.commit()
+                continue
             case 'product':
                 maker = input("Введите производителя ноутбука: ")
                 if (len(maker) > 10):
                     print("Название производителя продукта не более 10 символов, сброс ввода")
                     continue
                 
-                model = input("Введите модель продукта: ")
+                model = input("Введите модель продукта(убедитесь чтобы не было такой же модели): ")
                 if (len(model) > 10):
                     print("Название модели не должно быть больше 10, сброс ввода")
                     continue
@@ -431,12 +449,14 @@ def insert_into_table_func():
                     conn.commit()
                     print("Строка добавлена")
                 except:
+                    conn.commit()
                     print("Строка не добавлена")
-                break
+                    
+                continue
             case 'PC':
                 # columns_pc = ['code', 'model', 'speed', 'ram', 'hd', 'cd', 'price']
                 try:
-                    code = int(input("Введите код ПК: "))
+                    code = int(input("Введите код ПК(убедитесь, чтобы не было такого же кода ПК): "))
                 except:
                     print("Код ПК только целое число, сброс ввода")
                     continue
@@ -500,14 +520,15 @@ def insert_into_table_func():
                     conn.commit()
                     print("Строка добавлена")
                 except:
+                    conn.commit()
                     print("Строка не добавлена, в таблице 'products' скорее всего отсутствует первичный ключ для атрибута 'model' \
                         Создайте сначала строку в таблице 'products', где укажите соответствующий первичный ключ 'model'")
-                break
+                continue
                 
             case 'printer':
                 # columns_printer = ['code', 'model', 'color', 'type', 'price']
                 try:
-                    code = int(input("Введите код принтера: "))
+                    code = int(input("Введите код принтера(убедитесь, чтобы не было такого же кода принтера): "))
                 except:
                     print("Должно быть только целое число, сброс ввода")
                     continue
@@ -545,8 +566,9 @@ def insert_into_table_func():
                     conn.commit()
                     print("Строка добавлена")
                 except:
+                    conn.commit()
                     print("Строка не добавлена")
-                break
+                continue
 
             case _:
                 print("""
@@ -718,7 +740,7 @@ delete_from_table Удалить строку в таблице
             delete_from_table_func()
         case _:
             print("""
-Нужно ввести приведенную выше команду!
+Нужно ввести приведенную выше команду! Даже без пробелов!
 
 - Полностью ломай. Ломай меня полностью. 
 - Я хочу, чтоб ты ломал меня.
